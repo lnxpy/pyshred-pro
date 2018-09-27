@@ -3,7 +3,7 @@
 welcome to Pyshred Pro program!<br>
 <br>
 hi guys!<br>
-this is Pyshred.. a program that allow you to chop your image with some formulas.<br>
+this is Pyshred Pro Version.. a program that allow you to chop your image with some formulas.<br>
 Pyshred needs Black White image for converting to text files.. so you can use
 coloric pictures or b,w pictures!
 for this program you should install Opencv with :
@@ -36,15 +36,15 @@ NOTE : Available For Linux Base
 
 you can see the manual with :
 
->$python3 Pyshred.py --help
+>$python3 Pyshred-Pro.py --help
 
 or
 
->$python3 Pyshred.py -h
+>$python3 Pyshred-Pro.py -h
 
-and you can use Pyshred with :
+and you can use Pyshred-Pro with :
 
->$python3 Pyshred.py --Image image.png
+>$python3 Pyshred-Pro.py --Image image.png
 
 # Example
 
