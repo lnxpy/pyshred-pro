@@ -30,7 +30,7 @@ for this program you should install Opencv with :
 
 # Windows
 
->c:\>pip install opencv-python
+>c:\\>pip install opencv-python
 
 # USAGE
 
