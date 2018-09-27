@@ -28,7 +28,9 @@ for this program you should install Opencv with :
 
 >$sudo pip3 install opencv-python
 
-NOTE : Available For Linux Base
+# Windows
+
+>c:\>pip install opencv-python
 
 # USAGE
 
