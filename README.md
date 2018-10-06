@@ -16,6 +16,7 @@ for this program you should install Opencv Package!
 ✓ Lower For High RES Images<br>
 ✓ Faster For Low RES Images<br>
 ✓ More Beautiful
+✓ Compare ~LOG
   
 # Linux DEB:
 
