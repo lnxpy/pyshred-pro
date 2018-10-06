@@ -30,7 +30,7 @@ for this program you should install Opencv with :
 or
 
 `$sudo python3 Pyshred-Pro/setup.py`
-`
+
 # Windows
 
 `c:\>pip install opencv-python`
