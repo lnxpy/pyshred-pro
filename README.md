@@ -5,18 +5,18 @@ hi guys!<br>
 this is Pyshred Pro Version.. a program that allow you to chop your image with some formulas.<br>
 Pyshred needs Black White image for converting to text files.. so you can use
 coloric pictures or b,w pictures!
-for this program you should install Opencv with :
+for this program you should install Opencv Package!
 <br><br>
 
 # New Update
 
 <ui>
-  <li>Loading Bar</li>
-  <li>More Clear</li>
-  <li>Cleaner</li>
-  <li>Lower For High RES Images</li>
-  <li>Faster For Low RES Images</li>
-  <li>More Beautiful</li>
+  <li>✓ Loading Bar</li>
+  <li>✓ More Clear</li>
+  <li>✓ Cleaner</li>
+  <li>✓ Lower For High RES Images</li>
+  <li>✓ Faster For Low RES Images</li>
+  <li>✓ More Beautiful</li>
   </ui>
   
 # Linux DEB:
