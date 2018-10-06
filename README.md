@@ -56,6 +56,7 @@ In the ~man of Pyshred-Pro you cas see the run base formation as :
   
   `--Image IMAGE  input the image URL!`
 
+use `Python3 Pyshred-Pro\Pyshred-Pro.py --Image test.png` for select on test.png then the output will be `test.txt` in the curent directory!
 <img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/1.png" width="100%">
 <img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/2.png" width="100%">
 <img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/3.png" width="100%">
