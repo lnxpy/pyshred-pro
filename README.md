@@ -47,7 +47,12 @@ or
 
 # USAGE
 
-'$python3 Pyshred-Pro.py --Image image.png'
+In the ~man of Pyshred-Pro you cas see the run base formation as :
+`usage: Pyshred-Pro.py [-h] [--Image IMAGE]
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --Image IMAGE  input the image URL!`
 
 <img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/1.png" width="100%">
 <img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/2.png" width="100%">
