@@ -1,5 +1,6 @@
 # Pyshred Pro ✎
 welcome to Pyshred Pro program!<br>
+This site was built using [GitHub Pages](https://pages.github.com/).
 <br>
 hi guys!<br>
 this is Pyshred Pro Version.. a program that allow you to chop your image with some formulas.<br>
