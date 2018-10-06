@@ -21,12 +21,10 @@ for this program you should install Opencv with :
   
 # Linux DEB:
 
-``$sudo apt update
-
-$sudo apt install python3-pip
-
-$sudo pip3 install opencv-python
-``
+`$sudo apt update`
+`$sudo apt install python3-pip`
+`$sudo pip3 install opencv-python`
+`
 # Windows
 
 >c:\\>pip install opencv-python
