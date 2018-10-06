@@ -41,10 +41,10 @@ or
 
 # USAGE
 
-<img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/1.png" width="100%">
-<img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/2.png" width="100%">
-<img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/3.png" width="100%">
-<img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/4.png" width="100%">
+><img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/1.png" width="100%">
+><img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/2.png" width="100%">
+><img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/3.png" width="100%">
+><img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/4.png" width="100%">
 
 you can see the manual with :
 
