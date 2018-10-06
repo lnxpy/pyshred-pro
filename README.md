@@ -10,11 +10,11 @@ for this program you should install Opencv Package!
 
 # New Update
 
-✓ Loading Bar
-✓ More Clear
-✓ Cleaner
-✓ Lower For High RES Images
-✓ Faster For Low RES Images
+✓ Loading Bar<br>
+✓ More Clear<br>
+✓ Cleaner<br>
+✓ Lower For High RES Images<br>
+✓ Faster For Low RES Images<br>
 ✓ More Beautiful
   
 # Linux DEB:
