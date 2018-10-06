@@ -24,8 +24,9 @@ def main():
         flick(image_url)
 
 def flick(ui):
+    sys(cmode)
     img = reader(ui,0)
-    print('\n~~> Pyshred '+clr.yellow+'Pro'+clr.end+' Version <~~')
+    print('~~> Pyshred '+clr.yellow+'Pro'+clr.end+' Version')
     slp(1)
     if img is None:
         print('\n-> Pyshred [--Image IMAGE] *- '+clr.red+'Invalid'+clr.end+' URL')
@@ -52,6 +53,7 @@ def token(image,name):
     chlog = '1'
     chcol = clr.red
 
+    print('-> LOG')
     rfile = open('log.txt','r')
     data = rfile.read().split('\n')
     for i in data:
@@ -72,7 +74,6 @@ def token(image,name):
             chlog = '0'
             chcol = clr.green
 
-    stdout.write("\n")
     log('Loading Bar Finished')
     file.close()
     print('\n-> Rep : Image has '+clr.green+'exported'+clr.end+'!')
