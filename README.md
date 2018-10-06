@@ -1,6 +1,5 @@
 # Pyshred Pro ✎
 welcome to Pyshred Pro program!<br>
-This site was built using [GitHub Pages](https://pages.github.com/).
 <br>
 hi guys!<br>
 this is Pyshred Pro Version.. a program that allow you to chop your image with some formulas.<br>
@@ -72,15 +71,15 @@ use `Python3 Pyshred-Pro\Pyshred-Pro.py --Image test.png` for select on test.png
 
 <img src="https://github.com/lnxpy/Pyshred/blob/master/ex.gif" width="100%">
 
-<ul>alan turing</ul>
+[Alan Turing](https://en.wikipedia.org/wiki/Alan_Turing)
 
-<ul>dennis ritchie</ul>
+[Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)
 
-<ul>richard stallman</ul>
+[Richard Stallman](https://en.wikipedia.org/wiki/Richard_Stallman)
 
-<ul>linus torvalds</ul>
+[Linus Torvalds](https://en.wikipedia.org/wiki/Linus_Torvalds)
 
-<ul>guido van rossum</ul>
+[Guido (van) Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum)
 
 Be Happy :)
 <br><br>
