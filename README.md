@@ -26,12 +26,18 @@ for this program you should install Opencv with :
 `$sudo apt install python3-pip`
 
 `$sudo pip3 install opencv-python`
+
 or
+
 `$sudo python3 Pyshred-Pro/setup.py`
 `
 # Windows
 
 `c:\>pip install opencv-python`
+
+or
+
+`$sudo python3 Pyshred-Pro/setup.py`
 
 # USAGE
 
