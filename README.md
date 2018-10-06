@@ -39,24 +39,22 @@ or
 
 `$sudo python3 Pyshred-Pro/setup.py`
 
-# USAGE
+# Manual
 
-><img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/1.png" width="100%">
-><img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/2.png" width="100%">
-><img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/3.png" width="100%">
-><img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/4.png" width="100%">
-
-you can see the manual with :
-
->$python3 Pyshred-Pro.py --help
+`$python3 Pyshred-Pro.py --help`
 
 or
 
->$python3 Pyshred-Pro.py -h
+`$python3 Pyshred-Pro.py -h`
 
-and you can use Pyshred-Pro with :
+# USAGE
 
->$python3 Pyshred-Pro.py --Image image.png
+'$python3 Pyshred-Pro.py --Image image.png'
+
+<img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/1.png" width="100%">
+<img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/2.png" width="100%">
+<img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/3.png" width="100%">
+<img src="https://github.com/lnxpy/Pyshred-Pro/blob/master/src/4.png" width="100%">
 
 # Example
 
