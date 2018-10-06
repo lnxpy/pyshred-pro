@@ -71,15 +71,15 @@ use `Python3 Pyshred-Pro\Pyshred-Pro.py --Image test.png` for select on test.png
 
 <img src="https://github.com/lnxpy/Pyshred/blob/master/ex.gif" width="100%">
 
->alan turing
+<ul>alan turing</ul>
 
->dennis ritchie
+<ul>dennis ritchie</ul>
 
->richard stallman
+<ul>richard stallman</ul>
 
->linus torvalds
+<ul>linus torvalds</ul>
 
->guido van rossum
+<ul>guido van rossum</ul>
 
 Be Happy :)
 <br><br>
