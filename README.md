@@ -1,7 +1,7 @@
 # Pyshred Pro ✎
 welcome to Pyshred Pro program!<br>
 <br>
-hi guys!<br>[![Build Status](https://t.me/lnxpy/{lnxpy}/{https://github.com/lnxpy/Pyshred-Pro/blob/master/src/4}.png?branch=master)](https://t.me/lnxpy/{lnxpy}/{Pyshred-Pro})
+hi guys!<br>
 
 this is Pyshred Pro Version.. a program that allow you to chop your image with some formulas.<br>
 Pyshred needs Black White image for converting to text files.. so you can use
