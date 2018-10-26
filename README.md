@@ -37,7 +37,7 @@ or
 
 or
 
-`$sudo python3 Pyshred-Pro/setup.py`
+`c:\>python Pyshred-Pro/setup.py`
 
 # Manual
 
