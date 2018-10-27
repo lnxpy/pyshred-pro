@@ -30,7 +30,7 @@ def flick(ui):
     slp(1)
     if img is None:
         print('\n-> Pyshred [--Image IMAGE] *- '+clr.red+'Invalid'+clr.end+' URL')
-        log('Error While Inputing The')
+        log('Error While Inputing The Image')
         return
     else:
         print('\n-> Rep : '+ui+'\'s '+clr.green+'Inputed'+clr.end+'!')
