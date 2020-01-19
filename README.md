@@ -14,9 +14,9 @@ Pyshred uses an advanced mathematical library which is Numpy. Numpy allows Pyshr
 # Linux
 
 ```
-$sudo apt update
-$sudo apt install python3-pip
-$sudo pip3 install opencv-python
+~$ apt update
+~$ apt install python3-pip
+~/Pyshred-Pro/$ pip3 install -r requirements.txt
 ```
 
 # USAGE
