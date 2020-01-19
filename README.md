@@ -19,7 +19,7 @@ Pyshred uses an advanced mathematical library which is Numpy. Numpy allows Pyshr
 ~/Pyshred-Pro/$ pip3 install -r requirements.txt
 ```
 
-# USAGE
+# Usage
 
 In the man-page of the Pyshred, you can see the way you can run this program in:
 ```
@@ -31,7 +31,7 @@ optional arguments:
   --Image IMAGE  input the image URL!
 ```
 
-# Example
+# Examples
 
 <img src="https://github.com/lnxpy/Pyshred/blob/master/ex.gif" width="100%">
 
