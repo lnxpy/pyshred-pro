@@ -2,7 +2,7 @@
 
 Pyshred is a program that lets you to chop your images with some basic image processing formulas. First you need to put your image right in your prompt shell, then It'll work with Its self. But how It works?
 
-## How Pyshred Works
+### How Pyshred Works
 It's so simple!
 Pyshred uses an advanced mathematical library which is Numpy. Numpy allows Pyshred to process on images as fast as a white fox from Siberia. Check this out to find out what Images basically are.
 
@@ -11,16 +11,16 @@ Pyshred uses an advanced mathematical library which is Numpy. Numpy allows Pyshr
   <img src="http://datagenetics.com/blog/august32013/matrix.png" width="370" alt="accessibility text">
 </p>
 
-# Linux
+### Linux
 
-```
+```bash
 ~$ apt update
 ~$ apt install python3-pip
 Pyshred-Pro$ pip3 install -r requirements.txt
 Pyshred-Pro$ python3 Pyshred-Pro.py --Image /path/to/your/file.png
 ```
 
-# Usage
+### Usage
 
 In the man-page of the Pyshred, you can see the way you can run this program in:
 ```
@@ -32,7 +32,7 @@ optional arguments:
   --Image IMAGE  input the image URL!
 ```
 
-# Examples
+### Previews
 
 <img src="https://github.com/lnxpy/Pyshred/blob/master/ex.gif" width="100%">
 
