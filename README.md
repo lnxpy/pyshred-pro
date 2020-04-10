@@ -7,8 +7,8 @@ It's so simple!
 Pyshred uses an advanced mathematical library which is Numpy. Numpy allows Pyshred to process on images as fast as a white fox from Siberia. Check this out to find out what Images basically are.
 
 <p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQWLEYfPhzAW6uyJ1dsfDWZhR9YpUZDzEEL2OIkIiHdnUwRB6g&s" width="350" title="hover text">
-  <img src="http://datagenetics.com/blog/august32013/matrix.png" width="370" alt="accessibility text">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQWLEYfPhzAW6uyJ1dsfDWZhR9YpUZDzEEL2OIkIiHdnUwRB6g&s" width="350">
+  <img src="http://datagenetics.com/blog/august32013/matrix.png" width="370">
 </p>
 
 ### Linux
