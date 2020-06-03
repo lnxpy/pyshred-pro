@@ -3,7 +3,7 @@
 Pyshred is a program that lets you to chop your images with some basic image processing formulas. First you need to put your image right in your prompt shell, then It'll work with Its self. But how It works?
 
 ### How Pyshred Works
-It's so simple!
+It's very simple!
 Pyshred uses an advanced mathematical library which is Numpy. Numpy allows Pyshred to process on images as fast as a white fox from Siberia. Check this out to find out what Images basically are.
 
 <p align="center">
