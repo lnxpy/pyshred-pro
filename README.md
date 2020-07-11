@@ -11,7 +11,7 @@ Pyshred uses an advanced mathematical library which is Numpy. Numpy allows Pyshr
   <img src="http://datagenetics.com/blog/august32013/matrix.png" width="370">
 </p>
 
-### Linux
+### Setting up on Linux
 
 ```bash
 ~$ apt update
