@@ -1,3 +1,3 @@
 # Pyshred Pro v2.0
 
-This version will be deployed ASAP.
+This version will be deployed as soon as possible.
