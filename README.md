@@ -16,9 +16,8 @@ next, we need to install python packages which are written in **requirements.txt
 we're ready! start to use it! 🙂️
 
 ## usage
-+ the main file of pyshred in **Pyshred-Pro.py** and it get your commands.<br>
-+ **condition.py, export.py, log.py, clr.py** are other python files that main file use them.<br>
-+ **log.txt** show logs written when you work with pyshred.<br>
++ the main file of pyshred in **run.py** and it get your commands.<br>
++ **condition.py, export.py, tools.py** are other python files that main file use them.<br>
 + **config.json** get some features(will be explained)
 
 2 things you can do by pyshred:
@@ -27,17 +26,23 @@ we're ready! start to use it! 🙂️
 
 ### convert mode
 to convert _input.jpg_ to designed text in _output.txt_, run this command:<br>
-``python3 Pyshred-Pro.py --cfrom input.jpg --cto output.txt``<br>
+``python3 run.py --cfrom input.jpg --cto output.txt``<br>
 you will see _input.txt_ file in your current path.
 
 ### reconvert mode
 you can get image in _reconvert_ mode by 2 ways:
 + from designed text (_input.txt_ to _output.jpg_):<br>
-``python3 Pyshred-Pro.py --rcfrom input.txt --rcto output.jpg``<br>
+``python3 run.py --rcfrom input.txt --rcto output.jpg``<br>
 it puts text over an empty image (by defined charaters and their image arrays) then output image.
 + from image (_input.jpg_ to _output.jpg_) (recommended):<br>
-``python3 Pyshred-Pro.py --rcfrom input.jpg --rcto output.jpg``<br>
+``python3 run.py --cfrom input.jpg --cto output.jpg``<br>
 at the first, it uses _convert_ mode to output designed text of image, then converts text to image(like the previous command)
+
+| from ... | to ... | mode      | command |
+|----------|--------|-----------|---------|
+| image    | image  | reconvert | python3 run.py --rcfrom input.jpg --rcto output.jpg |
+| text     | image  | reconvert | python3 run.py --rcfrom input.txt --rcto output.jpg |
+| image    | txt    | convert   | python3 run.py --cfrom input.jpg --cto output.txt |
 
 ## config
 when you run pyshred, it reads **config.json** to set some features.<br>
