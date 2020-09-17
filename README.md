@@ -26,8 +26,8 @@ we're ready! start to use it! 🙂️
 2. convert designed text to image (_reconvert_ mode)
 
 ### convert mode
-to convert _input.jpg_ to designed text, run this command:<br>
-``python3 Pyshred-Pro.py --Image input.jpg``<br>
+to convert _input.jpg_ to designed text in _output.txt_, run this command:<br>
+``python3 Pyshred-Pro.py --cfrom input.jpg --cto output.txt``<br>
 you will see _input.txt_ file in your current path.
 
 ### reconvert mode

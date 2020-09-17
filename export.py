@@ -1,19 +1,25 @@
-from cv2 import imwrite,resize
+from cv2 import imread, imwrite, resize
 from numpy import array,zeros,uint8
 from argparse import ArgumentParser as AP
-from condition import char
+from tools import char, sub
 
-def make_img(path, width, height):
-	print("read input...")
-	txt = open(path,'r').read()
-	print("start exporting...")
+def make_img(txt, width, height):
+	print("# get data...")
+	_w = txt.find("\n")
+	_h = len(txt.split("\n"))
 	if width=="input":
-		width=len(txt.split("\n")[0])
+		width = _w
+	else:
+		width = int(width)
 	if height=="input":
-		height=len(txt.split("\n"))
-	arr = zeros((height, width, 3),uint8)
+		height = _h
+	else:
+		height = int(height)
+	print("# make array...")
+	arr = zeros((_h*5, _w*5, 3),uint8)
 	pos1 = [0,0]
 	d = {"X":(255,255,255),"-":(0,0,0)}
+	print("# start loop...")
 	for x in txt.split("\n"):
 		pos1[0]=0
 		for y in x:
@@ -27,19 +33,31 @@ def make_img(path, width, height):
 				pos2[1]+=1
 			pos1[0]+=5
 		pos1[1]+=5
-	print("fine!")
+	print("# loop finished")
+	print("# reiszing...")
+	arr = resize(arr, (width*5, height*5))
+	print("# reconvert mode finished")
 	return arr
 
-def main():
-	parser = AP()
-	parser.add_argument('--input',help='input the image URL')
-	parser.add_argument("--output", help="show log")
-	args = parser.parse_args()
-	path = args.input
-	arr = make_img(path)
-	out = args.output
-	imwrite(out, arr)
-	print("exported and saved!")
-
-if __name__=="__main__":
-	main()
+def make_txt(path, width="input", height="input"):
+	print("# load image...")
+	img = imread(path, 0)
+	print("# get data...")
+	if width=="input":
+		width=len(img)
+	else:
+		width=int(width)
+	if height=="input":
+		height=len(img[0])
+	else:
+		height=int(height)
+	print("# resizing...")
+	img = resize(img,(height, width))
+	text = ""
+	print("# start loop...")
+	for i in img:
+		for j in i:
+			text += sub(j)
+		text += '\n'
+	print("# convert mode finished")
+	return text
