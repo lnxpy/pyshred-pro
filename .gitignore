@@ -105,3 +105,4 @@ venv.bak/
 
 # -- from fork -- #
 log.txt
+.teston/
