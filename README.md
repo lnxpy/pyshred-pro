@@ -27,16 +27,16 @@ we're ready! start to use it! 🙂️
 
 ### convert mode
 to convert _input.jpg_ to designed text, run this command:<br>
-``python3 Pyshred-pro.py --Image input.jpg``<br>
+``python3 Pyshred-Pro.py --Image input.jpg``<br>
 you will see _input.txt_ file in your current path.
 
 ### reconvert mode
 you can get image in _reconvert_ mode by 2 ways:
 + from designed text (_input.txt_ to _output.jpg_):<br>
-``python3 Pyshred-pro.py --rcfrom input.txt --rcto output.jpg``<br>
+``python3 Pyshred-Pro.py --rcfrom input.txt --rcto output.jpg``<br>
 it puts text over an empty image (by defined charaters and their image arrays) then output image.
 + from image (_input.jpg_ to _output.jpg_) (recommended):<br>
-``python3 Pyshred-pro.py --rcfrom input.txt --rcto output.jpg``<br>
+``python3 Pyshred-Pro.py --rcfrom input.jpg --rcto output.jpg``<br>
 at the first, it uses _convert_ mode to output designed text of image, then converts text to image(like the previous command)
 
 ## config
