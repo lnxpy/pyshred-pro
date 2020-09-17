@@ -72,16 +72,20 @@ def main():
 		return
 	flick(
 		image_url,
-		int(config["convert"]["output"]["width"]),
-		int(config["convert"]["output"]["height"])
+		config["convert"]["output"]["width"],
+		config["convert"]["output"]["height"]
 	)
 
 def flick(ui, width="input", height="input"):
 	img = reader(ui,0)
 	if width=="input":
 		width=len(img)
+	else:
+		width=int(width)
 	if height=="input":
 		height=len(img[0])
+	else:
+		height=int(height)
 	img = resize(img,(width, height))
 	print('~~> Pyshred '+clr.yellow+'Pro'+clr.end+" Version")
 	if img is None:
