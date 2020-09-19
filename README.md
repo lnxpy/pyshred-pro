@@ -8,7 +8,7 @@ in the 2.0 version, it's possible to change picture appearance to seems like cha
 ![Maryam Mirzakhani, a light in the dark!](https://raw.githubusercontent.com/pycdr/pyshred-pro/master/test/output_example.jpg "Maryam Mirzakhani")
 ## Install 
 for installing, first you should clone pyshred:<br>
-> ``git clone https://github.com/lnxpy/pyshred-pro``
+> ``git clone https://github.com/pycdr/pyshred-pro``
 
 next, we need to install python packages which are written in **requirements.txt** via pip:
 > ``pip install -r requirements.txt``
@@ -16,34 +16,43 @@ next, we need to install python packages which are written in **requirements.txt
 we're ready! start to use it! 🙂️
 
 ## usage
+just run this:
+```
+python3 run.py --input <path> --output <path>
+# or
+python3 run.py -i <path> -o <path>
+```
+where ``<path>``s are the path of input/output file(e.g. image.png, pic.jpg, output.txt, ...)
+> **notice that run this on pyshred-pro directory, or have config.json file in the directory.**
+## how it works?
+### what are the files?
 + the main file of pyshred in **run.py** and it get your commands.<br>
-+ **condition.py, export.py, tools.py** are other python files that main file use them.<br>
++ **export.py** and **tools.py** are other python files that main file use them.<br>
 + **config.json** get some features(will be explained)
 
-2 things you can do by pyshred:
-1. convert image to designed text (_convert_ mode)
-2. convert designed text to image (_reconvert_ mode)
+### pyshred modes
+here are 3 modes in pyshred-pro:
+#### convert mode
+convert image to designed text.<br>
+for example, if you want to convert _input.jpg_ to _output.txt_ the mode will be set on **convert**, and your command will be like this:
+> ``python3 run.py -i input.jpg -o output.txt``
+#### reconvert mode
+convert designed text to image.<br>
+for example, if you want to convert _input.txt_ to _output.jpg_ the mode will be set on **reconvert**, and your command will be like this:
+> ``python3 run.py -i input.txt -o output.jpg``
+#### dualconvert mode
+convert image to image, but output will be different from input!<br>
+the **dualconvert** mode, first convert image to text(**convert** mode), then convert taken text to image(**reconvert** mode).<br>
+for example, if you want to convert _input.jpg to _output.jpg_ the mode will be set on **reconvert**, and your command will be like this:
+> ``python3 run.py -i input.jpg -o output.jpg``
 
-### convert mode
-to convert _input.jpg_ to designed text in _output.txt_, run this command:<br>
-``python3 run.py --cfrom input.jpg --cto output.txt``<br>
-you will see _input.txt_ file in your current path.
+## summary
 
-### reconvert mode
-you can get image in _reconvert_ mode by 2 ways:
-+ from designed text (_input.txt_ to _output.jpg_):<br>
-``python3 run.py --rcfrom input.txt --rcto output.jpg``<br>
-it puts text over an empty image (by defined charaters and their image arrays) then output image.
-+ from image (_input.jpg_ to _output.jpg_) (recommended):<br>
-``python3 run.py --cfrom input.jpg --cto output.jpg``<br>
-at the first, it uses _convert_ mode to output designed text of image, then converts text to image(like the previous command)
-
-| from ... | to ... | mode      | command |
-|----------|--------|-----------|---------|
-| image    | image  | reconvert | python3 run.py --rcfrom input.jpg --rcto output.jpg |
-| text     | image  | reconvert | python3 run.py --rcfrom input.txt --rcto output.jpg |
-| image    | txt    | convert   | python3 run.py --cfrom input.jpg --cto output.txt |
-
+| from  | to     | mode        | command                                   |
+|------ | ------ | ----------- | ----------------------------------------- |
+| image | text   | convert     | python3 run.py -i input.jpg -o output.txt |
+| text  | image  | reconvert   | python3 run.py -i input.txt -o output.jpg |
+| image | image  | dualconvert | python3 run.py -i input.jpg -o output.jpg |
 ## config
 when you run pyshred, it reads **config.json** to set some features.<br>
 by default, it's like this:
