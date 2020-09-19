@@ -1,4 +1,14 @@
+"""
+tools.py has functions which run.py uses them.
+DON'T EDIT IF YOU DIDN'T READ PROGRAM COMPLETELY OR YOUR'E TESTING, PLEASE!
+"""
+
 def sub(j):
+	"""
+return character for input pixel. used in convert mode.
+	+ input: int(from 0 to 255)
+	+ output: str(one character)
+	"""
 	c = ''
 	if j>=0 and j<15:
 		c = 'R'
@@ -33,7 +43,15 @@ def sub(j):
 	return c
 
 def char(x):
-	"RMBNTSI!~=+,."
+	"""
+return 5x5 array for input character. used in reconvert mode.
+	+ input: str(one character)
+		acceptable characters: RMBNTSI!~=+,.
+	+ output: 5x5 array(string considered as array).
+	what X and - mean:
+		X: the pixel will be colored
+		-: the pixel will not be colored
+"""
 	d = {
 		'R': ['XXX--', 'X-X--', 'XXX--', 'X-X--', 'X--X-'],
 		'B': ['XXX--', 'X--X-', 'X-X--', 'X--X-', 'XXX--'],
