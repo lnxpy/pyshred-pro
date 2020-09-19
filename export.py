@@ -2,8 +2,16 @@ from cv2 import imread, imwrite, resize
 from numpy import array,zeros,uint8
 from argparse import ArgumentParser as AP
 from tools import char, sub
-
-def make_img(txt, width, height):
+"""
+here is 2 functions that with them, you will be able to convert text to image or image to text, like its usage in main file(run.py)
+DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT CAREFULLY, PLEASE!
+"""
+def make_img(txt, width="input", height="input"): # convert txt to image array
+	"""convert <string> to image <array>.
++ notice that width and height will increase 5 times.
++ for example if width=30 and height=60, output will be 150x300 (30*5=150, 60*5=300).
++ why? because any word from <string> uses 5x5 area from output <array>.
+DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT CAREFULLY, PLEASE!"""
 	print("# get data...")
 	_w = txt.find("\n")
 	_h = len(txt.split("\n"))
@@ -39,7 +47,9 @@ def make_img(txt, width, height):
 	print("# reconvert mode finished")
 	return arr
 
-def make_txt(path, width="input", height="input"):
+def make_txt(path, width="input", height="input"): # convert image to txt
+	"""read [path] and get its <array>, then convert <array> to <string>
+DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT CAREFULLY, PLEASE!"""
 	print("# load image...")
 	img = imread(path, 0)
 	print("# get data...")
