@@ -17,6 +17,7 @@ def make_img(txt, width="input", height="input"): # convert txt to image array
 DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT CAREFULLY, PLEASE!"""
 	log("start reconvert mode", "export.py", "make_img()")
 	log("settings", "export.py", "make_img()")
+	txt = "\n".join([x for x in txt.split("\n") if x!=""]) # just for deleting the template underlines
 	print("# get data...")
 	_w = txt.find("\n")
 	_h = len(txt.split("\n"))
