@@ -15,7 +15,7 @@ DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT
     log('start reconvert mode', 'export.py', 'make_img()')
     log('settings', 'export.py', 'make_img()')
     txt = txt[0:-1] if txt[-1] == "\n" else x  # delete end underline
-    print '# get data...'
+    print('# get data...')
     _w = txt.find('\n')
     _h = len(txt.split('\n'))
     if width == 'input':
@@ -27,12 +27,12 @@ DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT
     else:
         height = int(height)
     log('making array', 'export.py', 'make_img()')
-    print '# making array...'
+    print('# making array...')
     arr = zeros((_h * 5, _w * 5, 3), uint8)
     pos1 = [0, 0]
     d = {'X': (255, 255, 255), '-': (0, 0, 0)}
     log('start reconvert loop', 'export.py', 'make_img()')
-    print '# start loop...'
+    print('# start loop...')
     for x in txt.split('\n'):
         pos1[0] = 0
         for y in x:
@@ -47,12 +47,12 @@ DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT
             pos1[0] += 5
         pos1[1] += 5
     log('loop finished', 'export.py', 'make_img()')
-    print '# loop finished'
+    print('# loop finished')
     log('resizing', 'export.py', 'make_img()')
-    print '# reiszing...'
+    print('# reiszing...')
     arr = resize(arr, (width * 5, height * 5))
     log('reonvert mode has done', 'export.py', 'make_img()')
-    print '# reconvert mode finished'
+    print('# reconvert mode finished')
     return arr
 
 
@@ -62,9 +62,9 @@ DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT
 
     log('start convert mode', 'export.py', 'make_txt()')
     log('load image', 'export.py', 'make_txt()')
-    print '# load image...'
+    print('# load image...')
     img = imread(path, 0)
-    print '# get data...'
+    print('# get data...')
     log('settings', 'export.py', 'make_txt()')
     if width == 'input':
         width = len(img)
@@ -75,17 +75,17 @@ DON'T EDIT IF YOU ARE GOING TO TEST YOURSELF/ITSELF, OR YOU DIDN'T UNDERSTAND IT
     else:
         height = int(height)
     log('resizing', 'export.py', 'make_txt()')
-    print '# resizing...'
+    print('# resizing...')
     img = resize(img, (height, width))
     text = ''
     log('start convert loop', 'export.py', 'make_txt()')
-    print '# start loop...'
+    print('# start loop...')
     for i in img:
         for j in i:
             text += sub(j)
         text += '\n'
     log('loop finished', 'export.py', 'make_txt()')
     log('convert mode has  done', 'export.py', 'make_txt()')
-    print '# convert mode finished'
+    print('# convert mode finished')
     return text
 
