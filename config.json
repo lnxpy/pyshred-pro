@@ -1,0 +1,14 @@
+{
+	"convert":{
+		"output":{
+			"width":"input",
+			"height":"input"
+		}
+	},
+	"reconvert":{
+		"output":{
+			"width":"input",
+			"height":"input"
+		}
+	}
+}
