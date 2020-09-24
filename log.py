@@ -1,9 +1,28 @@
-from platform import uname as name
-from getpass import getuser as user
-from datetime import datetime as time
-#}
-def login(stat):
+from os import getcwd
+from os.path import join
+from time import asctime
 
-    file = open('log.txt','a')
-    file.write('-> '+stat+' from '+name()[1]+' host '+user()+' user'+' on '+name()[0]+name()[2]+name()[4]+' os at '+str(time.now())+'\n')
-    file.close()
+path = join(getcwd(), 'log.txt')
+
+
+def log(msg, *pos):
+    """msg: log message
+*pos: position for where logging is happening.
+example: log("convert mode started", "run.py", "main", "convert-mode")"""
+
+    if len(pos) == 0:
+        if msg == 'START':
+            out = '=' * 20 + ' START LOGGING FOR PYSHRED-PRO V2.0 at ' \
+                + asctime()
+        elif msg == 'END':
+            out = '=' * 20 + ' END LOGGING FOR PYSHRED-PRO V2.0 at ' \
+                + asctime()
+        else:
+            out = '# DEVELOPER LOG: ' + msg
+    else:
+        out = '[' + ' : '.join(pos) + ']: ' + msg
+    out += '\n'
+    with open(path, 'a') as f:
+        f.write(out)
+        f.close()
+
