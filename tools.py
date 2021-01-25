@@ -41,7 +41,7 @@ return character for input pixel. used in convert mode.
     elif j >= 190 and j < 210:
         c = ','
     else:
-        c = '.'
+        c = ' '
     return c
 
 
@@ -70,6 +70,7 @@ return 5x5 array for input character. used in reconvert mode.
         '+': ['--X--', '--X--', 'XXXXX', '--X--', '--X--'],
         ',': ['-----', '-----', '-----', '---X-', '--X--'],
         '.': ['-----', '-----', '-----', '-----', '--X--'],
+        ' ': ['-----', '-----', '-----', '-----', '-----']
         }
     return d[x]
 
